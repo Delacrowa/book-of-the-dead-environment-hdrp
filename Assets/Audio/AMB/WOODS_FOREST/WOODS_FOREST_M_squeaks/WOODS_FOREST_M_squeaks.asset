@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d72fdeae34806243ba705deb00d282b, type: 3}
+  m_Name: WOODS_FOREST_M_squeaks
+  m_EditorClassIdentifier: 
+  program:
+    clips:
+    - clip: {fileID: 8300000, guid: f6db4e78a5a156748bcf5a242f1efbce, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: cb86aabcbda6b35499a2607ec3823b4e, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: a5e1d7e8a5db2574983ef8c92172699a, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 97bca34f054c1b941a4b3b02db8059da, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: c376a6ae0e635834c81f03b506c2ed7a, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 1a832f9a70064524f84eb11e992551a7, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: f1193c5598615344089399e21ff1aade, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: f82c09592a5326f488cb7c919763608f, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: c4d7be7b3af76e44484185e9235b1ae0, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: c8fdd030e0497b149b04417d1d82c4e6, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 2cbb518ab6c1e834fbdda35e4d8538e6, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 6ff4fb167c0cb9044a7c82f97fff0153, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 745953bf215e78641b7cd0db48e17b32, type: 3}
+      gain: 0
+    randomize: 1
+    increment: 1
+    mixerGroup: {fileID: 243868163416902684, guid: 8e6cb3bad29c67a4d8ab7a39e1bfeb99,
+      type: 2}
+    parameters:
+      loop: 0
+      volume:
+        min: 0.95657533
+        max: 1
+      pitch:
+        min: 0.95
+        max: 1.05
+      panning: 0
+      envelope:
+        attack: 0
+        release: 15
+      spatial:
+        blend: 0.874
+        distance:
+          min: 1
+          max: 108.662964
+        doppler: 0.8
+      randomization:
+        distance:
+          min: 0.5282555
+          max: 1
+      occlusion:
+        function: 1
+      slapback:
+        asset: {fileID: 0}
+      runtime:
+        priority: 128
+  sequence:
+    timing:
+    - asset: {fileID: 0}
+      delay:
+        min: 6
+        max: 16
+      randomization:
+        chance: 1
+    duration:
+      min: 15
+      max: 45
+    repeat:
+      count: 0
+      forever: 1

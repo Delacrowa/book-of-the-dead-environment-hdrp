@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d72fdeae34806243ba705deb00d282b, type: 3}
+  m_Name: FX_stones_falling
+  m_EditorClassIdentifier: 
+  program:
+    clips:
+    - clip: {fileID: 8300000, guid: 563542b44f3b25e4280e79d41440375d, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 63f34c010b42ad341ae30ada204cff06, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: d89238813dc89f74b9ecd7750784e2f6, type: 3}
+      gain: 0
+    randomize: 1
+    increment: 1
+    mixerGroup: {fileID: 243664981903087390, guid: 8e6cb3bad29c67a4d8ab7a39e1bfeb99,
+      type: 2}
+    parameters:
+      loop: 0
+      volume:
+        min: 0.8188042
+        max: 0.9188042
+      pitch:
+        min: 0.95
+        max: 1.05
+      panning: 0
+      envelope:
+        attack: 0
+        release: 0
+      spatial:
+        blend: 0.954
+        distance:
+          min: 0
+          max: 72.28403
+        doppler: 0.8
+      randomization:
+        distance:
+          min: 0.57750154
+          max: 0.9552236
+      occlusion:
+        function: 1
+      slapback:
+        asset: {fileID: 0}
+      runtime:
+        priority: 160
+  sequence:
+    timing:
+    - asset: {fileID: 0}
+      delay:
+        min: 5
+        max: 10
+      randomization:
+        chance: 0.531
+    duration:
+      min: 12
+      max: 17
+    repeat:
+      count: 0
+      forever: 1

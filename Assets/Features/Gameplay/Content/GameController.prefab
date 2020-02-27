@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1859474874131006}
+  m_IsPrefabParent: 1
+--- !u!1 &1859474874131006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4671411805744386}
+  - component: {fileID: 114880148458677582}
+  - component: {fileID: 114092339393394122}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: GameController
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4671411805744386
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1859474874131006}
+  m_LocalRotation: {x: -0.2661885, y: -0.72086203, z: -0.36469606, w: 0.5258313}
+  m_LocalPosition: {x: -147.36317, y: 103.59, z: -165.34}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -53.681004, y: -107.79401, z: 0.023000002}
+--- !u!114 &114092339393394122
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1859474874131006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87a8d7b6df705454abd4af1ef28efd62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agentIdentifier: 
+  randomizePosition: 0
+  floorLayers:
+    serializedVersion: 2
+    m_Bits: 1
+  playerCamera: {fileID: 0}
+--- !u!114 &114880148458677582
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1859474874131006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b158fe00f30cfe47bdc87e32120de0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPoint: {fileID: 114092339393394122}
+  playerPrefab: {fileID: 114858968655866542, guid: 5b751e2c3ed3eb640abb2fb185a2221a,
+    type: 2}
+  playerCameraPrefab: {fileID: 114164580211111474, guid: ba610f06beb62f1408f7e73166247735,
+    type: 2}

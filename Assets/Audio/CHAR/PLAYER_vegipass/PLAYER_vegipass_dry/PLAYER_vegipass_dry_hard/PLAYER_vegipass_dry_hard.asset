@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d72fdeae34806243ba705deb00d282b, type: 3}
+  m_Name: PLAYER_vegipass_dry_hard
+  m_EditorClassIdentifier: 
+  program:
+    clips:
+    - clip: {fileID: 8300000, guid: b520acb8a9101d14bb729d3963134fb5, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 62a3681c409681942844fe3c37702a87, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 0aedbd37fe75be140afe2386bfc6108f, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 5cdd21b6e1506f349bac78ea3764e14e, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: ca08c9f7591c6cd4cbb1cac639af070c, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: d8eb5f1de51ae624688e2abd11afd230, type: 3}
+      gain: 0
+    randomize: 1
+    increment: 1
+    mixerGroup: {fileID: 243827746635309952, guid: 8e6cb3bad29c67a4d8ab7a39e1bfeb99,
+      type: 2}
+    parameters:
+      loop: 0
+      volume:
+        min: 0.668964
+        max: 0.868964
+      pitch:
+        min: 0.95
+        max: 1.05
+      panning: 0
+      envelope:
+        attack: 0
+        release: 0
+      spatial:
+        blend: 1
+        distance:
+          min: 1.5
+          max: 2.5
+        doppler: 5
+      randomization:
+        distance:
+          min: 0
+          max: 0
+      occlusion:
+        function: 0
+      slapback:
+        patch: {fileID: 0}
+      runtime:
+        priority: 128
+  sequence:
+    timing: []
+    duration:
+      min: 0
+      max: 0
+    repeat:
+      count: 0
+      forever: 1

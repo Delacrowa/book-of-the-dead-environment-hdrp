@@ -1,0 +1,12 @@
+{
+    "name": "LayerCulling",
+    "references": [
+        "com.unity.render-pipelines.high-definition.Runtime",
+        "com.unity.render-pipelines.core.Runtime",
+        "PropertyMaster"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false
+}

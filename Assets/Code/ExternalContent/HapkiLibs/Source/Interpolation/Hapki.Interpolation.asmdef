@@ -1,0 +1,10 @@
+{
+    "name": "Hapki.Interpolation",
+    "references": [
+        "Hapki"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false
+}

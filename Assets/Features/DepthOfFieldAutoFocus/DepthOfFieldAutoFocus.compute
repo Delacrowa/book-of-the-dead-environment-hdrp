@@ -1,0 +1,185 @@
+﻿#pragma kernel CSMain
+
+#include "CoreRP/ShaderLibrary/Common.hlsl"
+#include "HDRP/ShaderVariables.hlsl"
+
+#define BUCKETED_SAMPLING 1
+// 16 samples, won't handle a different number
+#define KERNEL_SMALL
+#include "PostProcessing/Shaders/Builtins/DiskKernels.hlsl"
+
+float _FocalLength;
+float _ApertureFilmHeightx2;
+float _SmoothTime;
+float _MaxAdaptionSpeed;
+float _DeltaTime;
+float _VoteBias;
+float _DistanceOverride;
+float _DistanceOverrideWeight;
+float _FixedFocusDistance;
+float _Influence;
+
+struct AutoFocusParams
+{
+	float currentFocusDistance;
+	float currentVelocity;
+	float targetFocusDistance;
+};
+
+struct AutoFocusOutput
+{
+	float focusDistance;
+	float lensCoeff;
+};
+
+RWStructuredBuffer<AutoFocusParams> _AutoFocusParams : register(u2);
+RWStructuredBuffer<AutoFocusOutput> _AutoFocusOutput : register(u3);
+
+// TODO: The beginning is quick, while the end is slow. This (I think, unverified) creates an effect
+// that looking at a close up object makes it gradually get in focus, while after switching back to
+// looking at distant objects the nearby instantly loses focus. Try making it more balanced?
+float SmoothDamp(float current, float target, inout float currentVelocity)
+{
+	float omega = 2.0 / _SmoothTime;
+
+	float x = omega * _DeltaTime;
+	float e = 1.0 / (1.0 + x + 0.48 * x * x + 0.235 * x * x * x);
+	float change = current - target;
+	float originalTo = target;
+
+	// Clamp maximum speed
+	// float maxChange = _MaxAdaptionSpeed * _SmoothTime;
+	// change = clamp(change, -maxChange, maxChange);
+	// target = current - change;
+
+	float temp = (currentVelocity + omega * change) * _DeltaTime;
+	currentVelocity = (currentVelocity - omega * temp) * e;
+	float output = target + (change + temp) * e;
+
+	// Prevent overshooting
+	if (sign(originalTo - current) == sign(output - originalTo))
+	{
+		output = originalTo;
+		currentVelocity = (output - originalTo) / _DeltaTime;
+	}
+
+	return output;
+}
+
+float Depth(float2 offset)
+{
+	return LinearEyeDepth(_CameraDepthTexture.SampleLevel(sampler_CameraDepthTexture, 0.5 + offset, 0).r, _ZBufferParams);
+}
+
+void Output(float focusDistance)
+{
+	focusDistance = lerp(focusDistance, _DistanceOverride, _DistanceOverrideWeight);
+	focusDistance = lerp(_FixedFocusDistance, focusDistance, _Influence);
+
+	_AutoFocusOutput[0].focusDistance = focusDistance;
+	_AutoFocusOutput[0].lensCoeff = _FocalLength * _FocalLength / (_ApertureFilmHeightx2 * (focusDistance - _FocalLength));
+}
+
+#if !BUCKETED_SAMPLING
+[numthreads(1,1,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+	float3 duv = float3(1.0, 1.0, -1.0) * 0.01;
+	float focusDistance = Depth(0);
+
+	// Choosing samples like this only prevents us from shooting through small holes,
+	// but since a single pixel can still flip us closer/further, it's not making the effect more stable.
+	// For that we'd probably need a median + hysteresis filter.
+	focusDistance = min(focusDistance, Depth( duv.xy));
+	focusDistance = min(focusDistance, Depth( duv.zy));
+	focusDistance = min(focusDistance, Depth(-duv.zy));
+	focusDistance = min(focusDistance, Depth(-duv.xy));
+
+	focusDistance = max(focusDistance, _FocalLength);
+
+	AutoFocusParams params = _AutoFocusParams[0];
+	params.currentFocusDistance = SmoothDamp(params.currentFocusDistance, focusDistance, params.currentVelocity);
+	_AutoFocusParams[0] = params;
+	Output(params.currentFocusDistance);
+}
+
+#else // BUCKETED_SAMPLING
+
+[numthreads(1,1,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+	// Settings
+	float sampleKernelSize = 0.02;
+	float depthTolerance = 0.02;
+	uint voteBias = _VoteBias;
+
+	// Buckets
+	float depths[16] = {-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1};
+	uint votes[16] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+
+	// Init the first bucket with the current target depth
+	// Even though it might actually not be hit by any sample, and
+	// in a rare case cause the last sample to not get a bucket.
+	// No votes for now.
+	AutoFocusParams params = _AutoFocusParams[0];
+	float targetFocusDistance = params.targetFocusDistance;
+	depths[0] = targetFocusDistance;
+
+	for (uint i = 0; i < 16; i++)
+	{
+		float2 offset = kDiskKernel[i] * sampleKernelSize;
+		float depth = Depth(offset);
+
+		// TODO: Any depth that would result in effective focus at infinity should be
+		// clamped here into one value. Otherwise we're unnecesarily spreading them over buckets
+		// and decreasing their voting power. Need to figure out what that focus distance is from DoF params.
+		// depth = min(_FocusDistanceToInfinity, depth);
+		// Alternatively: bucket based on raw depth and only convert the output to linear.
+
+		// Find an empty bucket or add to a bucket that's close enough
+		for (uint j = 0; j < 16; j++)
+		{
+			float bucket = depths[j];
+
+			// New bucket, claim it
+			if (bucket == -1)
+			{
+				depths[j] = depth;
+				votes[j] += 1;
+				break;
+			}
+
+			// Belongs to this bucket, upvote
+			if (abs(bucket - depth) < depthTolerance)
+			{
+				votes[j] += 1;
+				break;
+			}
+		}
+	}
+
+	// Find the bucket with the most votes
+	uint mostVotes = 0;
+	uint biggestBucket = 0;
+	for (uint k = 0; k < 16; k++)
+	{
+		if (mostVotes < votes[k])
+		{
+			mostVotes = votes[k];
+			biggestBucket = k;
+		}
+	}
+
+	// If the bucket with the most votes got considerably more votes (i.e. more by voteBias) than
+	// the current target focus distance, set it as the new target focus distance.
+	// Clamp the vote bias to the most votes value - if the buckets are too small, we can't be too sticky.
+	voteBias = min (mostVotes - 1, voteBias);
+	if (mostVotes > votes[0] + voteBias)
+		targetFocusDistance = depths[biggestBucket];
+
+	params.currentFocusDistance = SmoothDamp(params.currentFocusDistance, targetFocusDistance, params.currentVelocity);
+	params.targetFocusDistance = targetFocusDistance;
+	_AutoFocusParams[0] = params;
+	Output(params.currentFocusDistance);
+}
+#endif // BUCKETED_SAMPLING

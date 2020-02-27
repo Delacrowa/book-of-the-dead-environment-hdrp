@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d72fdeae34806243ba705deb00d282b, type: 3}
+  m_Name: PLAYER_vegipass_green_soft
+  m_EditorClassIdentifier: 
+  program:
+    clips:
+    - clip: {fileID: 8300000, guid: a0ed1cbd45b13ea44b605028bd5c8f1c, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 6b85cb7628aa05148a51791a9845535c, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 37c87d74d778e4448b725ac9ffd7432c, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 74b9c829e1770d14bb4c6a4fee45f686, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 02b178844e5e52c4881a0765b81faaa7, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 692da0c65de2ba64fb2693587486b4bc, type: 3}
+      gain: 0
+    randomize: 1
+    increment: 1
+    mixerGroup: {fileID: 243827746635309952, guid: 8e6cb3bad29c67a4d8ab7a39e1bfeb99,
+      type: 2}
+    parameters:
+      loop: 0
+      volume:
+        min: 0.4
+        max: 0.6
+      pitch:
+        min: 0.95
+        max: 1.05
+      panning: 0
+      envelope:
+        attack: 0
+        release: 0
+      spatial:
+        blend: 1
+        distance:
+          min: 1.5
+          max: 2.5
+        doppler: 5
+      randomization:
+        distance:
+          min: 0
+          max: 0
+      occlusion:
+        function: 0
+      slapback:
+        asset: {fileID: 0}
+      runtime:
+        priority: 128
+  sequence:
+    timing: []
+    duration:
+      min: 0
+      max: 0
+    repeat:
+      count: 0
+      forever: 1

@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d72fdeae34806243ba705deb00d282b, type: 3}
+  m_Name: FX_branch_falls_woods_mono
+  m_EditorClassIdentifier: 
+  program:
+    clips:
+    - clip: {fileID: 8300000, guid: 0d6d7b32297f1484fb62a92d4229d512, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 865fcc9c62ae96d48b7849f398dd2dad, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 6455d80764e7ee44b89fc81bc34193e1, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 417841dd289ee2c4895c934a893f9fd7, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 0260f87d1c0d9f1409706a85b7a7f51f, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 62dec70e4c6fa15478294d21b49f736c, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 263484a6e2687cb409d7c39575e6bec1, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: cb28ed4b2f04bb24ca8f15e0d6cceff5, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: ea7dc76dc34395a498bf76dc06c79502, type: 3}
+      gain: 0
+    randomize: 1
+    increment: 1
+    mixerGroup: {fileID: 243664981903087390, guid: 8e6cb3bad29c67a4d8ab7a39e1bfeb99,
+      type: 2}
+    parameters:
+      loop: 0
+      volume:
+        min: 0.70283556
+        max: 0.91153705
+      pitch:
+        min: 1
+        max: 1
+      panning: 0
+      envelope:
+        attack: 0
+        release: 1
+      spatial:
+        blend: 0.777
+        distance:
+          min: 0
+          max: 33.59906
+        doppler: 0.8
+      randomization:
+        distance:
+          min: 0.31174704
+          max: 0.43377212
+      occlusion:
+        function: 1
+      slapback:
+        asset: {fileID: 0}
+      runtime:
+        priority: 128
+  sequence:
+    timing:
+    - asset: {fileID: 0}
+      delay:
+        min: 5
+        max: 10
+      randomization:
+        chance: 0.822
+    duration:
+      min: 5
+      max: 20
+    repeat:
+      count: 0
+      forever: 1

@@ -1,0 +1,238 @@
+fileFormatVersion: 2
+guid: 6804b173bfe02c847ba5dbcad60c1c54
+timeCreated: 1505941743
+licenseType: Store
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Point001
+    100002: Point002
+    100004: Point003
+    100006: Point004
+    100008: Point005
+    100010: Point006
+    100012: Point007
+    100014: Point008
+    100016: Point009
+    100018: Point010
+    100020: Point011
+    100022: Point012
+    100024: Point013
+    100026: Point014
+    100028: Point015
+    100030: Point016
+    100032: Point017
+    100034: Point018
+    100036: Point019
+    100038: Point020
+    100040: Point021
+    100042: Point022
+    100044: Point023
+    100046: Point024
+    100048: Point025
+    100050: Point026
+    100052: Point027
+    100054: Point028
+    100056: Point029
+    100058: Point030
+    100060: Point031
+    100062: Point032
+    100064: Point033
+    100066: Point034
+    100068: Point035
+    100070: Point036
+    100072: Point037
+    100074: Point038
+    100076: Point039
+    100078: Point040
+    100080: Point041
+    100082: Point042
+    100084: Point043
+    100086: Point044
+    100088: Point045
+    100090: Point046
+    100092: Point047
+    100094: Point048
+    100096: Point049
+    100098: Point050
+    100100: Point051
+    100102: Point052
+    100104: Point053
+    100106: Point054
+    100108: Point055
+    100110: Point056
+    100112: Point057
+    100114: sticks02_phys_006
+    100116: sticks02_phys_007
+    100118: sticks02_phys_008
+    100120: sticks02_phys_009
+    100122: sticks02_phys_010
+    100124: sticks02_phys_011
+    100126: //RootNode
+    400000: Point001
+    400002: Point002
+    400004: Point003
+    400006: Point004
+    400008: Point005
+    400010: Point006
+    400012: Point007
+    400014: Point008
+    400016: Point009
+    400018: Point010
+    400020: Point011
+    400022: Point012
+    400024: Point013
+    400026: Point014
+    400028: Point015
+    400030: Point016
+    400032: Point017
+    400034: Point018
+    400036: Point019
+    400038: Point020
+    400040: Point021
+    400042: Point022
+    400044: Point023
+    400046: Point024
+    400048: Point025
+    400050: Point026
+    400052: Point027
+    400054: Point028
+    400056: Point029
+    400058: Point030
+    400060: Point031
+    400062: Point032
+    400064: Point033
+    400066: Point034
+    400068: Point035
+    400070: Point036
+    400072: Point037
+    400074: Point038
+    400076: Point039
+    400078: Point040
+    400080: Point041
+    400082: Point042
+    400084: Point043
+    400086: Point044
+    400088: Point045
+    400090: Point046
+    400092: Point047
+    400094: Point048
+    400096: Point049
+    400098: Point050
+    400100: Point051
+    400102: Point052
+    400104: Point053
+    400106: Point054
+    400108: Point055
+    400110: Point056
+    400112: Point057
+    400114: sticks02_phys_006
+    400116: sticks02_phys_007
+    400118: sticks02_phys_008
+    400120: sticks02_phys_009
+    400122: sticks02_phys_010
+    400124: sticks02_phys_011
+    400126: //RootNode
+    2300000: sticks02_phys_006
+    2300002: sticks02_phys_007
+    2300004: sticks02_phys_008
+    2300006: sticks02_phys_009
+    2300008: sticks02_phys_010
+    2300010: sticks02_phys_011
+    3300000: sticks02_phys_006
+    3300002: sticks02_phys_007
+    3300004: sticks02_phys_008
+    3300006: sticks02_phys_009
+    3300008: sticks02_phys_010
+    3300010: sticks02_phys_011
+    4300000: sticks02_phys_006
+    4300002: sticks02_phys_007
+    4300004: sticks02_phys_008
+    4300006: sticks02_phys_009
+    4300008: sticks02_phys_010
+    4300010: sticks02_phys_011
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sticks_02_phys
+    second: {fileID: 2100000, guid: 669ac18110d9f6d4f9f80758031a01e0, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 0
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 0
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: model_processed_v01
+  assetBundleName: 
+  assetBundleVariant: 

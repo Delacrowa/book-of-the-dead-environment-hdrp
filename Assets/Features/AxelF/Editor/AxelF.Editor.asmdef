@@ -1,0 +1,12 @@
+{
+    "name": "AxelF.Editor",
+    "references": [
+        "AxelF"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false
+}

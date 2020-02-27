@@ -1,0 +1,16 @@
+{
+    "name": "Gameplay",
+    "references": [
+        "AxelF",
+        "TerrainFoley",
+        "com.unity.render-pipelines.core.Runtime",
+        "com.unity.postprocessing.Runtime",
+        "DepthOfFieldAutoFocus",
+        "Hapki.Interpolation",
+        "Hapki.Solvers"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false
+}

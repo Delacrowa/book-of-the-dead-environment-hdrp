@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d72fdeae34806243ba705deb00d282b, type: 3}
+  m_Name: PLAYER_breathing_IN_slow_plain_nose
+  m_EditorClassIdentifier: 
+  program:
+    clips:
+    - clip: {fileID: 8300000, guid: d10fdd3b410645e428aa829ea26593f2, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 9b00f6f2f342b064ea7518aece19bd9c, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 967ad8729c8ba3b479b1cd9618b515e8, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: aab0be14d6f1de842b1a3011a25153e7, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 5df58d6ba53b52a4aada2920c2837768, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 600218a6ee931fd4b9bd90c64e7a0095, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 6c4560f0a53888d4ea7d31a5a48450a0, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: dac05efc5f0a98d489718bbacfeab653, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 0c4de66c21389b24484e277a67ccc51e, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 5f202f51399d6cc41b63aa19e7ffc5e3, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 8e52246c26e88ec4f83b2438006446a3, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 34ac7d85a737cc549b2f33c257225540, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: bcaa975f04013a64bb97189b268ac94a, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: fe291aed9b3214b4fbb3637546aadd29, type: 3}
+      gain: 0
+    randomize: 1
+    increment: 1
+    mixerGroup: {fileID: 243673074036377360, guid: 8e6cb3bad29c67a4d8ab7a39e1bfeb99,
+      type: 2}
+    parameters:
+      loop: 0
+      volume:
+        min: 0.30526316
+        max: 0.5040486
+      pitch:
+        min: 1
+        max: 1
+      panning: 0
+      envelope:
+        attack: 1.2
+        release: 0
+      spatial:
+        blend: 0
+        distance:
+          min: 1
+          max: 40
+        doppler: 0.8
+      randomization:
+        distance:
+          min: 0
+          max: 0
+      occlusion:
+        function: 0
+      slapback:
+        asset: {fileID: 0}
+      runtime:
+        priority: 128
+  sequence:
+    timing: []
+    duration:
+      min: 0
+      max: 0
+    repeat:
+      count: 0
+      forever: 1

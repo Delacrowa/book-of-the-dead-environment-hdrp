@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d72fdeae34806243ba705deb00d282b, type: 3}
+  m_Name: woodscreak_c
+  m_EditorClassIdentifier: 
+  program:
+    clips:
+    - clip: {fileID: 8300000, guid: 92bf1e80859525948be37117dfb3c4e1, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: f999109012e091e4ba50d1910eecf4b9, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 34b92d4cd39c2a24c99ce1ce0dfcf3bc, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 0648f425d8b5225479116f2dd426e9f2, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 44199eff2367e624eafa603e7fa54100, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 847a6818029acb14fb13c3cfa4107d85, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: d135b0daff81d124e8e5a06c3dd7ebd7, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 211490f77bf3a8c43b9aea3199ed32a4, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: a33a3001e8cd8cd44912a8108ad85109, type: 3}
+      gain: 0
+    randomize: 1
+    increment: 0
+    mixerGroup: {fileID: 243868163416902684, guid: 8e6cb3bad29c67a4d8ab7a39e1bfeb99,
+      type: 2}
+    parameters:
+      loop: 0
+      volume:
+        min: 0.5943142
+        max: 0.751703
+      pitch:
+        min: 1
+        max: 1
+      panning: 0
+      envelope:
+        attack: 0
+        release: 0
+      spatial:
+        blend: 1
+        distance:
+          min: 1
+          max: 80
+        doppler: 0.8
+      randomization:
+        distance:
+          min: 0.23298815
+          max: 0.77752256
+      occlusion:
+        function: 1
+      slapback:
+        asset: {fileID: 0}
+      runtime:
+        priority: 128
+  sequence:
+    timing:
+    - asset: {fileID: 0}
+      delay:
+        min: 0
+        max: 5
+      randomization:
+        chance: 1
+    duration:
+      min: 6
+      max: 14
+    repeat:
+      count: 0
+      forever: 1

@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d72fdeae34806243ba705deb00d282b, type: 3}
+  m_Name: WOODS_HIVE_ST_structure_squeak_low
+  m_EditorClassIdentifier: 
+  program:
+    clips:
+    - clip: {fileID: 8300000, guid: b4abf7e21c11289488ab34f5ee27d336, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 233983a1310ce1a46adfa603001438ac, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 9e19b71b892007446acd3e448971fc94, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 5a62a42e9e6c8ce4b9097895b6f782a2, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: fa9dafde8d321de48bf131b0bd2a553c, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 33e2ac34253ec3a499edef703bbbf258, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 15a2f6f2df592c740b862f86fe8b92ea, type: 3}
+      gain: 0
+    randomize: 1
+    increment: 1
+    mixerGroup: {fileID: 243664981903087390, guid: 8e6cb3bad29c67a4d8ab7a39e1bfeb99,
+      type: 2}
+    parameters:
+      loop: 0
+      volume:
+        min: 0.91890895
+        max: 1
+      pitch:
+        min: 0.85
+        max: 1
+      panning: 0
+      envelope:
+        attack: 0
+        release: 0
+      spatial:
+        blend: 1
+        distance:
+          min: 1.5
+          max: 15
+        doppler: 0
+      randomization:
+        distance:
+          min: 0.027514078
+          max: 0.30473343
+      occlusion:
+        function: 0
+      slapback:
+        asset: {fileID: 0}
+      runtime:
+        priority: 128
+  sequence:
+    timing:
+    - asset: {fileID: 0}
+      delay:
+        min: 1
+        max: 2
+      randomization:
+        chance: 0.6
+    duration:
+      min: 7
+      max: 13
+    repeat:
+      count: 0
+      forever: 1

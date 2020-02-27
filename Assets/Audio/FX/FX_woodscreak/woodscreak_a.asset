@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d72fdeae34806243ba705deb00d282b, type: 3}
+  m_Name: woodscreak_a
+  m_EditorClassIdentifier: 
+  program:
+    clips:
+    - clip: {fileID: 8300000, guid: e15f1baaa459e39418b112899144e534, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 80e1bcf6b80cf78409f05c225233ed4b, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 2211aa77703cb0e4c92af0215c2e1d74, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 4e9474b10edfe6842a6871e074bc9d0c, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: f8e7aad08fa85eb4c9fc84e7fb8cd9de, type: 3}
+      gain: 0
+    randomize: 1
+    increment: 0
+    mixerGroup: {fileID: 243868163416902684, guid: 8e6cb3bad29c67a4d8ab7a39e1bfeb99,
+      type: 2}
+    parameters:
+      loop: 0
+      volume:
+        min: 0.615162
+        max: 0.77255076
+      pitch:
+        min: 1
+        max: 1
+      panning: 0
+      envelope:
+        attack: 0
+        release: 0
+      spatial:
+        blend: 1
+        distance:
+          min: 1
+          max: 80
+        doppler: 0.8
+      randomization:
+        distance:
+          min: 0.23298815
+          max: 0.77752256
+      occlusion:
+        function: 1
+      slapback:
+        asset: {fileID: 0}
+      runtime:
+        priority: 128
+  sequence:
+    timing:
+    - asset: {fileID: 0}
+      delay:
+        min: 0
+        max: 5
+      randomization:
+        chance: 1
+    duration:
+      min: 6
+      max: 14
+    repeat:
+      count: 0
+      forever: 1

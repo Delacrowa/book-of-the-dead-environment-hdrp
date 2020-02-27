@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82770e431bc44104fa70e98a63fd672d, type: 3}
+  m_Name: PlayerFoley
+  m_EditorClassIdentifier: 
+  footsteps:
+  - name: grass
+    physicalMaterial: {fileID: 0}
+    walking: {fileID: 11400000, guid: 81b405e9d512ef74b959b26391c3a02c, type: 2}
+    walkingUndergrowth: {fileID: 11400000, guid: b0c3eef5de107d748846dea0d0626dba,
+      type: 2}
+    jogging: {fileID: 11400000, guid: 5dd5b6489b5b2d94fb39dc9d8b6629a4, type: 2}
+    joggingUndergrowth: {fileID: 11400000, guid: 71a70a52f58355d40aa911e96112052b,
+      type: 2}
+    running: {fileID: 11400000, guid: 5dd5b6489b5b2d94fb39dc9d8b6629a4, type: 2}
+    runningUndergrowth: {fileID: 11400000, guid: 9409a8cfe6cbff541a478c03ce533623,
+      type: 2}
+    landing: {fileID: 11400000, guid: 061bdeece0a0ced4289d4796d7eec99f, type: 2}
+  - name: sticks
+    physicalMaterial: {fileID: 0}
+    walking: {fileID: 11400000, guid: 6849aa8ade4ccc0448b66a6256bd9c5d, type: 2}
+    walkingUndergrowth: {fileID: 11400000, guid: b0c3eef5de107d748846dea0d0626dba,
+      type: 2}
+    jogging: {fileID: 11400000, guid: 6330a750902a878409735dfc43035841, type: 2}
+    joggingUndergrowth: {fileID: 11400000, guid: 71a70a52f58355d40aa911e96112052b,
+      type: 2}
+    running: {fileID: 11400000, guid: 6330a750902a878409735dfc43035841, type: 2}
+    runningUndergrowth: {fileID: 11400000, guid: 9409a8cfe6cbff541a478c03ce533623,
+      type: 2}
+    landing: {fileID: 11400000, guid: e2ea1c58f3e304541b595949320a90ae, type: 2}
+  - name: stones
+    physicalMaterial: {fileID: 0}
+    walking: {fileID: 11400000, guid: d2028ef2a51bb464f9282afaeba435dd, type: 2}
+    walkingUndergrowth: {fileID: 11400000, guid: b0c3eef5de107d748846dea0d0626dba,
+      type: 2}
+    jogging: {fileID: 11400000, guid: 3044141a6b2a65949a781f3d949e39ed, type: 2}
+    joggingUndergrowth: {fileID: 11400000, guid: 71a70a52f58355d40aa911e96112052b,
+      type: 2}
+    running: {fileID: 11400000, guid: 3044141a6b2a65949a781f3d949e39ed, type: 2}
+    runningUndergrowth: {fileID: 11400000, guid: 9409a8cfe6cbff541a478c03ce533623,
+      type: 2}
+    landing: {fileID: 11400000, guid: 9366faa769a9d434cb30f1d4f03ea873, type: 2}
+  - name: gravel
+    physicalMaterial: {fileID: 13400000, guid: ded97bf2d6b5cf14ebd7412cd056835a, type: 2}
+    walking: {fileID: 11400000, guid: cc8a835060a059548aac87f9f48fd944, type: 2}
+    walkingUndergrowth: {fileID: 11400000, guid: b0c3eef5de107d748846dea0d0626dba,
+      type: 2}
+    jogging: {fileID: 11400000, guid: 060a9533aed8a8b4f8f94113fcfffd6c, type: 2}
+    joggingUndergrowth: {fileID: 11400000, guid: 71a70a52f58355d40aa911e96112052b,
+      type: 2}
+    running: {fileID: 11400000, guid: 060a9533aed8a8b4f8f94113fcfffd6c, type: 2}
+    runningUndergrowth: {fileID: 11400000, guid: 9409a8cfe6cbff541a478c03ce533623,
+      type: 2}
+    landing: {fileID: 11400000, guid: 18b23daa47655244190cfece2631b2ae, type: 2}
+  - name: rock
+    physicalMaterial: {fileID: 13400000, guid: d1ede964f94ae644b919a549d9012cbc, type: 2}
+    walking: {fileID: 11400000, guid: d2028ef2a51bb464f9282afaeba435dd, type: 2}
+    walkingUndergrowth: {fileID: 11400000, guid: b0c3eef5de107d748846dea0d0626dba,
+      type: 2}
+    jogging: {fileID: 11400000, guid: 3044141a6b2a65949a781f3d949e39ed, type: 2}
+    joggingUndergrowth: {fileID: 11400000, guid: 71a70a52f58355d40aa911e96112052b,
+      type: 2}
+    running: {fileID: 11400000, guid: 3044141a6b2a65949a781f3d949e39ed, type: 2}
+    runningUndergrowth: {fileID: 11400000, guid: 9409a8cfe6cbff541a478c03ce533623,
+      type: 2}
+    landing: {fileID: 11400000, guid: 9366faa769a9d434cb30f1d4f03ea873, type: 2}
+  footstepSpeedAttenuation: 0.35
+  footstepElevationAttenuation: 0.5
+  breathing:
+    initialDelay: 0.86
+    initialDelayVariance: 0.042
+    inhalePeriod: 1.6
+    inhalePeriodVariance: 0.2
+    inhalePeriodPacingFactor: 0.4
+    exhalePeriod: 0.59
+    exhalePeriodVariance: 0.065
+    breathingPeriod: 3
+    breathingPeriodVariance: 0.125
+    breathingPeriodIntensityFactor: 1.64
+    intensityDampening: 0.1
+    intensityTransference: 0.05
+    volumeOverPace: 0.141
+    volumeOverPaceVariance: 0.032
+    slowMouth:
+      inhale: {fileID: 11400000, guid: 748debb53cd43b842807224b25b9d72e, type: 2}
+      exhale: {fileID: 11400000, guid: 47006587f10a49b45ab2e516cc6072d9, type: 2}
+    slowNose:
+      inhale: {fileID: 11400000, guid: 9a226cef0c70063468b3df864ad6072f, type: 2}
+      exhale: {fileID: 11400000, guid: a19f5b81e9f3dd94aadffc24177fa6e0, type: 2}
+    mediumMouth:
+      inhale: {fileID: 11400000, guid: c0bb1659aabb41d40b173f80ad16ad5e, type: 2}
+      exhale: {fileID: 11400000, guid: 26598715027c32a4e970c1fca5999518, type: 2}
+    mediumNose:
+      inhale: {fileID: 11400000, guid: 772d5f22766197c46b05b29df7c2a7e5, type: 2}
+      exhale: {fileID: 11400000, guid: 9284cc10bc7ca2740bbc73444c3f9541, type: 2}
+    fastNose:
+      inhale: {fileID: 11400000, guid: 5eca5385d38350643a45f12376d39da5, type: 2}
+      exhale: {fileID: 11400000, guid: 27d1b7d0c13dc4a4e8aff08d8ab5c149, type: 2}
+    animatedMouth:
+      inhale: {fileID: 11400000, guid: 0085e6bc2a502c34eb47c92a9ec2e933, type: 2}
+      exhale: {fileID: 11400000, guid: 90c9a01b7e808a44c933b9fe72c40568, type: 2}
+    animatedNose:
+      inhale: {fileID: 11400000, guid: e6d093e9a6cb0274badcf0843b91b944, type: 2}
+      exhale: {fileID: 11400000, guid: d0466927b4f98f24ab71587a599f4e4a, type: 2}
+    fastAnimatedMouth:
+      inhale: {fileID: 11400000, guid: 161f8d22b08ce1145bfa720cef02adce, type: 2}
+      exhale: {fileID: 11400000, guid: 1c18e61423557874d8e971d134cd853b, type: 2}
+    fastAnimatedNose:
+      inhale: {fileID: 11400000, guid: 93d0def0bf861df4399ea514930d4b3c, type: 2}
+      exhale: {fileID: 11400000, guid: 7e930ce0e5b0f3541bb36f24beb0d26a, type: 2}

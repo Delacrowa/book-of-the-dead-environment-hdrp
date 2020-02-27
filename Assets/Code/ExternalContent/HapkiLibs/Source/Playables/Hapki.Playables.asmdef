@@ -1,0 +1,10 @@
+{
+    "name": "Hapki.Playables",
+    "references": [
+        "Hapki"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false
+}

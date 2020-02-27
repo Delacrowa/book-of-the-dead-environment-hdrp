@@ -1,0 +1,13 @@
+{
+    "name": "WindControl",
+    "references": [
+        "com.unity.render-pipelines.high-definition.Runtime",
+        "com.unity.render-pipelines.core.Runtime",
+        "PropertyMaster",
+        "AxelF"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false
+}

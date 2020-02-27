@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d72fdeae34806243ba705deb00d282b, type: 3}
+  m_Name: WOODS_HIVE_M_hits
+  m_EditorClassIdentifier: 
+  program:
+    clips:
+    - clip: {fileID: 8300000, guid: b497d086de746f647ac0195cda1eafff, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: afc39d0cf2644e940bef1f2459b54990, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 106a29b0b5c63fe40a38024e05c6c139, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 9165adc0d3f0d1d4dbcc10f6444523f7, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: da92dbd97f7f85749a344cd0e186ee31, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: a21b3cc391a5a76488eae9724f5eb10f, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: a70d73c4d9a1f3f40bf43fd330540b23, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: c685c5029fde905468004253dd0b6b57, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 5eb1f2e5c2274ce45bb20a2e75feef9e, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 04800c2b4c567b94b941563a4d712af6, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 912dfe3f830c40e4faea541038d027c9, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: f297d43ddfd538543bab17f200742602, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: a06fb89f7c920124cbaf482c19ca22a8, type: 3}
+      gain: 0
+    randomize: 1
+    increment: 0
+    mixerGroup: {fileID: 243664981903087390, guid: 8e6cb3bad29c67a4d8ab7a39e1bfeb99,
+      type: 2}
+    parameters:
+      loop: 0
+      volume:
+        min: 0.1
+        max: 0.2
+      pitch:
+        min: 1
+        max: 1
+      panning: 0
+      envelope:
+        attack: 0
+        release: 0
+      spatial:
+        blend: 0
+        distance:
+          min: 0
+          max: 0
+        doppler: 0
+      randomization:
+        distance:
+          min: 0
+          max: 0
+      occlusion:
+        function: 0
+      slapback:
+        asset: {fileID: 0}
+      runtime:
+        priority: 128
+  sequence:
+    timing:
+    - asset: {fileID: 0}
+      delay:
+        min: 0
+        max: 0
+      randomization:
+        chance: 1
+    duration:
+      min: 2
+      max: 10
+    repeat:
+      count: 0
+      forever: 1

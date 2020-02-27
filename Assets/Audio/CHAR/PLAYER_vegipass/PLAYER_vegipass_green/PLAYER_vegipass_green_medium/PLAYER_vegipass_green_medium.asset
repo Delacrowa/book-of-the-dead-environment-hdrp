@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d72fdeae34806243ba705deb00d282b, type: 3}
+  m_Name: PLAYER_vegipass_green_medium
+  m_EditorClassIdentifier: 
+  program:
+    clips:
+    - clip: {fileID: 8300000, guid: 98748045db6db4140904201a91ee9ec1, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 3a94a685119162b428b4cc0b199571a4, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 79e00e46adfa8c54a83e58bd434eba93, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 9155f49a9daa3384bafb3b5ba7848c6a, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 4ed605052481eb847a1237fe093d445d, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 6a53826e549f9234c9e9e83fb78de403, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: d7d908b8c7e35744aa444520abb59eaf, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 62975b5c83d12a34d8fed11ed03463bc, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 128e9ffafe27c924e81c74de7a67ed82, type: 3}
+      gain: 0
+    randomize: 1
+    increment: 1
+    mixerGroup: {fileID: 243827746635309952, guid: 8e6cb3bad29c67a4d8ab7a39e1bfeb99,
+      type: 2}
+    parameters:
+      loop: 0
+      volume:
+        min: 0.4
+        max: 0.6
+      pitch:
+        min: 0.95
+        max: 1.05
+      panning: 0
+      envelope:
+        attack: 0
+        release: 0
+      spatial:
+        blend: 1
+        distance:
+          min: 1.5
+          max: 2.5
+        doppler: 5
+      randomization:
+        distance:
+          min: 0
+          max: 0
+      occlusion:
+        function: 0
+      slapback:
+        asset: {fileID: 0}
+      runtime:
+        priority: 128
+  sequence:
+    timing: []
+    duration:
+      min: 0
+      max: 0
+    repeat:
+      count: 0
+      forever: 1

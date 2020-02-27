@@ -1,0 +1,311 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
+  m_Name: Cliff_AV
+  m_EditorClassIdentifier: 
+  components:
+  - {fileID: 114424390688290834}
+  - {fileID: 114704015275694744}
+  - {fileID: 114770152433734004}
+--- !u!114 &114424390688290834
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10b9ad5047bdaef41afc9d0c000e3d93, type: 3}
+  m_Name: LightProperties
+  m_EditorClassIdentifier: 
+  active: 1
+  target:
+    m_OverrideState: 0
+    m_Value:
+      exposedName: 
+      defaultValue: {fileID: 0}
+  rotation:
+    m_OverrideState: 1
+    m_Value: {x: 45.9, y: -448, z: -7}
+  color:
+    m_OverrideState: 0
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+    hdr: 0
+    showAlpha: 1
+    showEyeDropper: 1
+  colorTemperature:
+    m_OverrideState: 1
+    m_Value: 5500
+    min: 1000
+    max: 20000
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.6
+    min: 0
+  bounceIntensity:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+  cookie:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  cookieSize:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+--- !u!114 &114704015275694744
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc4dfd69489f38c40bf01de36e189cf3, type: 3}
+  m_Name: AtmosphericScatteringProperties
+  m_EditorClassIdentifier: 
+  active: 1
+  target:
+    m_OverrideState: 0
+    m_Value:
+      exposedName: 
+      defaultValue: {fileID: 0}
+  worldRayleighColorRamp:
+    m_OverrideState: 1
+    m_Value:
+      serializedVersion: 2
+      key0: {r: 0.11764705, g: 0.63488847, b: 1, a: 1}
+      key1: {r: 0.19215684, g: 0.4955511, b: 0.7490196, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 65535
+      ctime2: 0
+      ctime3: 0
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+  worldRayleighColorIntensity:
+    m_OverrideState: 1
+    m_Value: 0.69
+  worldRayleighDensity:
+    m_OverrideState: 1
+    m_Value: 20
+  worldRayleighExtinctionFactor:
+    m_OverrideState: 1
+    m_Value: 1.4
+  worldRayleighIndirectScatter:
+    m_OverrideState: 1
+    m_Value: 0.4
+  worldMieColorRamp:
+    m_OverrideState: 1
+    m_Value:
+      serializedVersion: 2
+      key0: {r: 1, g: 0.8701826, b: 0.7058823, a: 1}
+      key1: {r: 1, g: 0.82190675, b: 0.7058824, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 65535
+      ctime2: 0
+      ctime3: 0
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+  worldMieColorIntensity:
+    m_OverrideState: 1
+    m_Value: 1
+  worldMieDensity:
+    m_OverrideState: 1
+    m_Value: 40
+  worldMieExtinctionFactor:
+    m_OverrideState: 1
+    m_Value: 1
+  worldMiePhaseAnisotropy:
+    m_OverrideState: 1
+    m_Value: 0.7
+  worldNearScatterPush:
+    m_OverrideState: 1
+    m_Value: 0
+  worldNormalDistance:
+    m_OverrideState: 1
+    m_Value: 300
+  heightRayleighColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.735849, g: 0.7105186, b: 0.6143645, a: 1}
+    hdr: 0
+    showAlpha: 1
+    showEyeDropper: 1
+  heightRayleighIntensity:
+    m_OverrideState: 1
+    m_Value: 1
+  heightRayleighDensity:
+    m_OverrideState: 1
+    m_Value: 20
+  heightMieDensity:
+    m_OverrideState: 1
+    m_Value: 100
+  heightExtinctionFactor:
+    m_OverrideState: 1
+    m_Value: 1.1
+  heightSeaLevel:
+    m_OverrideState: 1
+    m_Value: -11.38
+  heightDistance:
+    m_OverrideState: 1
+    m_Value: 5.16
+  heightPlaneShift:
+    m_OverrideState: 1
+    m_Value: {x: 0, y: 0, z: 0}
+  heightNearScatterPush:
+    m_OverrideState: 1
+    m_Value: 0
+  heightNormalDistance:
+    m_OverrideState: 1
+    m_Value: 100
+  skyDomeScale:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 0.01, z: 1}
+  skyDomeRotation:
+    m_OverrideState: 1
+    m_Value: {x: 0, y: 0, z: 0}
+  skyDomeTrackedYawRotation:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  skyDomeVerticalFlip:
+    m_OverrideState: 0
+    m_Value: 0
+  skyDomeCube:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  skyDomeExposure:
+    m_OverrideState: 1
+    m_Value: 1
+  skyDomeTint:
+    m_OverrideState: 0
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+    hdr: 0
+    showAlpha: 1
+    showEyeDropper: 1
+  useOcclusion:
+    m_OverrideState: 0
+    m_Value: 1
+  occlusionBias:
+    m_OverrideState: 0
+    m_Value: 0
+  occlusionBiasIndirect:
+    m_OverrideState: 0
+    m_Value: 0.1
+  occlusionBiasClouds:
+    m_OverrideState: 0
+    m_Value: 0.1
+  occlusionDownscale:
+    m_OverrideState: 0
+    m_Value: 4
+  occlusionSamples:
+    m_OverrideState: 0
+    m_Value: 0
+  occlusionDepthFixup:
+    m_OverrideState: 0
+    m_Value: 0
+  occlusionDepthThreshold:
+    m_OverrideState: 0
+    m_Value: 25
+  occlusionFullSky:
+    m_OverrideState: 0
+    m_Value: 0
+  occlusionBiasSkyRayleigh:
+    m_OverrideState: 0
+    m_Value: 0.2
+  occlusionBiasSkyMie:
+    m_OverrideState: 0
+    m_Value: 0.4
+  worldScaleExponent:
+    m_OverrideState: 0
+    m_Value: 1
+  forcePerPixel:
+    m_OverrideState: 0
+    m_Value: 1
+  forcePostEffect:
+    m_OverrideState: 0
+    m_Value: 0
+--- !u!114 &114770152433734004
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 464f6e0848260324ba3912158c965f9a, type: 3}
+  m_Name: AutoFocusProperties
+  m_EditorClassIdentifier: 
+  active: 0
+  target:
+    m_OverrideState: 1
+    m_Value:
+      exposedName: e61e2d779509cd4428b399688c6ef3b9
+      defaultValue: {fileID: 0}
+  influence:
+    m_OverrideState: 1
+    m_Value: 0
+    min: 0
+    max: 1
+  focusDistanceWalk:
+    m_OverrideState: 1
+    m_Value: 4
+    min: 0.1
+  apertureWalk:
+    m_OverrideState: 1
+    m_Value: 3.5
+    min: 0.05
+    max: 32
+  focusDistanceRun:
+    m_OverrideState: 1
+    m_Value: 4
+    min: 0.1
+  apertureRun:
+    m_OverrideState: 1
+    m_Value: 3.5
+    min: 0.05
+    max: 32

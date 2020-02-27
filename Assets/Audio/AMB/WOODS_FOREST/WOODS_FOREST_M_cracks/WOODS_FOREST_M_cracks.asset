@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d72fdeae34806243ba705deb00d282b, type: 3}
+  m_Name: WOODS_FOREST_M_cracks
+  m_EditorClassIdentifier: 
+  program:
+    clips:
+    - clip: {fileID: 8300000, guid: 97b6333d8a7309c409da33db2026d80c, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: ef46cd25c449dc343a6f12b0b63f156d, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: c6b89eb5b24f70b4e840604ad304b0a2, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 8bbe00cf9be68ea4cbeb683f6e840bcf, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: dc80b62a84a4a7749936ac39a2c4a9e6, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 82cf868c5bad5644393acc6a76aa5212, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 179d1add83940c141bc550d86991f3b8, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 468d779a1752de749b7424c5a05b446c, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 6a0de3428fa31854b953f729942043f5, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 3f6355288fd99e049a99715d62543bd1, type: 3}
+      gain: 0
+    randomize: 1
+    increment: 1
+    mixerGroup: {fileID: 243868163416902684, guid: 8e6cb3bad29c67a4d8ab7a39e1bfeb99,
+      type: 2}
+    parameters:
+      loop: 0
+      volume:
+        min: 0.57222706
+        max: 0.88293827
+      pitch:
+        min: 0.95
+        max: 1.05
+      panning: 0
+      envelope:
+        attack: 0
+        release: 15
+      spatial:
+        blend: 1
+        distance:
+          min: 1
+          max: 40
+        doppler: 0.8
+      randomization:
+        distance:
+          min: 0.24417704
+          max: 0.5992713
+      occlusion:
+        function: 1
+      slapback:
+        asset: {fileID: 0}
+      runtime:
+        priority: 128
+  sequence:
+    timing:
+    - asset: {fileID: 0}
+      delay:
+        min: 2
+        max: 12
+      randomization:
+        chance: 1
+    duration:
+      min: 15
+      max: 45
+    repeat:
+      count: 0
+      forever: 1

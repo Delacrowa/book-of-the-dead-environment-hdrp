@@ -1,0 +1,12 @@
+{
+    "name": "Hapki.Editor",
+    "references": [
+        "Hapki"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false
+}

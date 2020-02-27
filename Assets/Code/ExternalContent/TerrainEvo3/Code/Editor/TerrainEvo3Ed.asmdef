@@ -1,0 +1,12 @@
+{
+    "name": "TerrainEvo3Ed",
+    "references": [
+        "TerrainEvo3"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false
+}

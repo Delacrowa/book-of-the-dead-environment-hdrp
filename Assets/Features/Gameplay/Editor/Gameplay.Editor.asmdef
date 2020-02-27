@@ -1,0 +1,12 @@
+{
+    "name": "Gameplay.Editor",
+    "references": [
+        "Gameplay"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false
+}

@@ -1,0 +1,235 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1334752717873070}
+  m_IsPrefabParent: 1
+--- !u!1 &1334752717873070
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4873573996229276}
+  - component: {fileID: 114412281612501484}
+  - component: {fileID: 33837981161015664}
+  - component: {fileID: 114745882850858148}
+  m_Layer: 0
+  m_Name: WindControl_v2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4873573996229276
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1334752717873070}
+  m_LocalRotation: {x: -0, y: -0.6340469, z: -0, w: 0.7732946}
+  m_LocalPosition: {x: -238.67, y: 110.19, z: -222.07}
+  m_LocalScale: {x: 225.8995, y: 72.24967, z: 289.45813}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33837981161015664
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1334752717873070}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &114412281612501484
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1334752717873070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab1234847ac5a8b46b7ba82f0a4783e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 1024
+--- !u!114 &114745882850858148
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1334752717873070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 652679af35f7179449c8110cd3057070, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  windGlobalStrengthScale: 1.2
+  windGlobalStrengthScale2: 1
+  windDirection: 290
+  windDirectionVariance: 9.8
+  windDirectionVariancePeriod: 9.3
+  windZoneIntensityOffset: 0.1
+  windZoneIntensityBaseScale: 0.1
+  windZoneIntensityGustScale: 0.1
+  windZoneIntensityFromGrass: 1
+  windBaseStrength: 0.4
+  windBaseStrengthOffset: 0
+  windBaseStrengthPhase: 3.05
+  windBaseStrengthPhase2: 0
+  windBaseStrengthVariancePeriod: 2
+  windGustStrength: 1.6
+  windGustStrengthOffset: 0.355
+  windGustStrengthPhase: 0.1
+  windGustStrengthPhase2: 0.39
+  windGustStrengthVariancePeriod: 4.67
+  windGustInnerCosScale: 2.86
+  windGustStrengthControl:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.0015993306
+      outSlope: -0.0015993306
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1.616327
+      value: 0.85687226
+      inSlope: -0.11292852
+      outSlope: -0.11292852
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 5.9756675
+      value: 0.641887
+      inSlope: 0.06471152
+      outSlope: 0.06471152
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 9.666598
+      value: 0.8744508
+      inSlope: 0.17151237
+      outSlope: 0.17151237
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 12.940781
+      value: 0.709244
+      inSlope: 0.11276762
+      outSlope: 0.11276762
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 18.87129
+      value: 0.8164945
+      inSlope: 0.10293072
+      outSlope: 0.10293072
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 27.68341
+      value: 0.8306399
+      inSlope: 0.13518403
+      outSlope: 0.13518403
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 30
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 1
+    m_PostInfinity: 1
+    m_RotationOrder: 4
+  windFlutterStrength: 0.5
+  windFlutterGustStrength: 5.64
+  windFlutterGustStrengthOffset: 0.1
+  windFlutterGustStrengthScale: 4.3
+  windFlutterGustVariancePeriod: 0.25
+  windTreeBaseStrength: 0.45
+  windTreeBaseStrengthOffset: 1
+  windTreeBaseStrengthPhase: 0.5
+  windTreeBaseStrengthPhase2: 0.073
+  windTreeBaseStrengthVariancePeriod: 3.1
+  windTreeGustStrength: 4
+  windTreeGustStrengthOffset: 0.3
+  windTreeGustStrengthPhase: 2
+  windTreeGustStrengthPhase2: 3
+  windTreeGustStrengthVariancePeriod: 2.5
+  windTreeGustInnerCosScale: 1
+  windTreeGustStrengthControl:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 10
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  windTreeFlutterStrength: 5
+  windTreeFlutterGustStrength: 5
+  windTreeFlutterGustStrengthOffset: 1
+  windTreeFlutterGustStrengthScale: 3.3
+  windTreeFlutterGustVariancePeriod: 2
+  linkWindBaseStrength: 0
+  linkWindBaseStrengthOffset: 0
+  linkWindBaseStrengthPhase: 0
+  linkWindBaseStrengthPhase2: 0
+  linkWindBaseStrengthVariancePeriod: 0
+  linkWindGustStrength: 0
+  linkWindGustStrengthOffset: 0
+  linkWindGustStrengthPhase: 0
+  linkWindGustStrengthPhase2: 0
+  linkWindGustStrengthVariancePeriod: 0
+  linkWindGustInnerCosScale: 0
+  linkWindFlutterStrength: 0
+  linkWindFlutterGustStrength: 0
+  linkWindFlutterGustStrengthOffset: 0
+  linkWindFlutterGustStrengthScale: 0
+  linkWindFlutterGustVariancePeriod: 0

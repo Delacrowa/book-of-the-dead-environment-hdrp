@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d72fdeae34806243ba705deb00d282b, type: 3}
+  m_Name: PLAYER_breathing_IN_medium_plain_mouth
+  m_EditorClassIdentifier: 
+  program:
+    clips:
+    - clip: {fileID: 8300000, guid: f6eb0bb367e3b2747974bcd229443dae, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 711efedce3373bd4eac0c09577ed9cbc, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 5e454d7afed30ef49929970c92611ad8, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 35d1b7cff25d1c04fa8819908437b75a, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: ed7d06609525fe645a79e7f5463c23e5, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: eb8c014807c28e041a73883e7534a22e, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: b97f53726c8bf96489c492987fa8a0c9, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: a88cc99ac1295ed49b03a43aace3d877, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: ae09c81b67b91284c999290bdde3844b, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: ae33a9ebd80b5be43aa854e4465290e6, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 66ae3d281642677418ed97db56e12605, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: ff6c158d97eadd84191a35460c9e06fe, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: dd4aa76b58c67e64bb27d7316f8eb00d, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: d7e1edd26f8219942a0fbead4c50f040, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: fff94ad12f73748459fb51559e7bc955, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 188f09d8c47cc454683ff4cfd73f27b6, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: aa73a29236ba1034c8a01d9b8d7ae3bf, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: abe0fde90e1b532478993698d6a12cb3, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 971bbdf2504d53845be2c70fbab7198c, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 5655b2b643fd5714f80da3c4b0fe4208, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 0c59b7a1122a7504fb00a9d2a4bdb23b, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 6ebb441a858bf6e4191ff87c51a7763d, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 88693be927a057a4899d390440072855, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 3f0b0579732d089488acca1375158753, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 30e6a3ca6b81d6746ac8fadee98ea33f, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 932a78d8720e7ea49a1c0260c3c591a3, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 9f607a963e75ea249bcaa59f13717ccf, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 86577d3eb313cd34eb29312a9cae8c49, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: d3cd53697d754c44f9549cefdc722f1a, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 47b7a17532df7bf46bfba62129c56910, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: a16f14e2e8890c241b3be2d50c90c127, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 5e11415c97a306d4e932d886224c6b85, type: 3}
+      gain: 0
+    randomize: 1
+    increment: 1
+    mixerGroup: {fileID: 243673074036377360, guid: 8e6cb3bad29c67a4d8ab7a39e1bfeb99,
+      type: 2}
+    parameters:
+      loop: 0
+      volume:
+        min: 0.4
+        max: 0.7
+      pitch:
+        min: 1
+        max: 1
+      panning: 0
+      envelope:
+        attack: 0.3
+        release: 0
+      spatial:
+        blend: 0
+        distance:
+          min: 1
+          max: 40
+        doppler: 0.8
+      randomization:
+        distance:
+          min: 0
+          max: 0
+      occlusion:
+        function: 0
+      slapback:
+        asset: {fileID: 0}
+      runtime:
+        priority: 128
+  sequence:
+    timing: []
+    duration:
+      min: 0
+      max: 0
+    repeat:
+      count: 0
+      forever: 1

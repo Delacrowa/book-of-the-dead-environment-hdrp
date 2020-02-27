@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d72fdeae34806243ba705deb00d282b, type: 3}
+  m_Name: PLAYER_vegipass_short_branch_break
+  m_EditorClassIdentifier: 
+  program:
+    clips:
+    - clip: {fileID: 8300000, guid: a87358a2c172e304887681e01366a710, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 07d60039417f483468a9f58657001ffa, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: be38e4d8cf9ef884d98f74382580f576, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: acc6827397f08d5409cff9654780fb39, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 1fd827e29971d0b4085df79c9bb86cf1, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 0d4b77b760dcf4a438b6c0f22c99593b, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: c1736a3a0ea604f49914a6212dc59a7f, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: b0570022a98fdbf44886c1c6b39508cf, type: 3}
+      gain: 0
+    randomize: 1
+    increment: 1
+    mixerGroup: {fileID: 243827746635309952, guid: 8e6cb3bad29c67a4d8ab7a39e1bfeb99,
+      type: 2}
+    parameters:
+      loop: 0
+      volume:
+        min: 0.4
+        max: 0.6
+      pitch:
+        min: 0.95
+        max: 1.05
+      panning: 0
+      envelope:
+        attack: 0
+        release: 0
+      spatial:
+        blend: 1
+        distance:
+          min: 1.5
+          max: 2.5
+        doppler: 5
+      randomization:
+        distance:
+          min: 0
+          max: 0
+      occlusion:
+        function: 0
+      slapback:
+        asset: {fileID: 0}
+      runtime:
+        priority: 128
+  sequence:
+    timing: []
+    duration:
+      min: 0
+      max: 0
+    repeat:
+      count: 0
+      forever: 1

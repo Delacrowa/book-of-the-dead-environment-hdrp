@@ -1,0 +1,121 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1467109007020134}
+  m_IsPrefabParent: 1
+--- !u!1 &1467109007020134
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4925500326751968}
+  - component: {fileID: 114858968655866542}
+  - component: {fileID: 114068675039078420}
+  - component: {fileID: 143694335516209754}
+  - component: {fileID: 114012310037640248}
+  m_Layer: 8
+  m_Name: PlayerController
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4925500326751968
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1467109007020134}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114012310037640248
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1467109007020134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a14c9ab5afa6c34fb3d570cecb0d5f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  foley: {fileID: 11400000, guid: f4c8e75d868690a44bd12bba65b88b1f, type: 2}
+--- !u!114 &114068675039078420
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1467109007020134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384f2641ab986384e8218fb0482fbbb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  looking:
+    lookSpeed: 0.15
+    runLookSpeed: 0.4
+    pitchLimitMin: -50
+    pitchLimitMax: 70
+  footPlanting:
+    floorLayers:
+      serializedVersion: 2
+      m_Bits: 1
+    walkStepDistance: 1.8
+    runStepDistance: 1.8
+    stopSpeedThreshold: 1
+  handPlanting:
+    wallLayers:
+      serializedVersion: 2
+      m_Bits: 1
+  jumping:
+    force: 0.6
+    dampSpeed: 2
+    gravityFactor: 1
+  locomotion:
+    walkSpeed: 1.8
+    runSpeed: 3.8
+    strafingScalar: 0.6
+--- !u!114 &114858968655866542
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1467109007020134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53614e45f4c01b9498f2223ed50cb04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agentIdentifier: 
+--- !u!143 &143694335516209754
+CharacterController:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1467109007020134}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 1.8
+  m_Radius: 0.4
+  m_SlopeLimit: 90
+  m_StepOffset: 0.4
+  m_SkinWidth: 0.2
+  m_MinMoveDistance: 0
+  m_Center: {x: 0, y: 0.9, z: 0}

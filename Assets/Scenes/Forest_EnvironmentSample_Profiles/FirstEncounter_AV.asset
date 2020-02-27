@@ -1,0 +1,476 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
+  m_Name: FirstEncounter_AV
+  m_EditorClassIdentifier: 
+  components:
+  - {fileID: 114546091308972056}
+  - {fileID: 114988657375307082}
+  - {fileID: 114417249122315104}
+--- !u!114 &114417249122315104
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4d4d92c6326cd74dab6467654a6d929, type: 3}
+  m_Name: WindControlProperties
+  m_EditorClassIdentifier: 
+  active: 1
+  target:
+    m_OverrideState: 0
+    m_Value:
+      exposedName: 
+      defaultValue: {fileID: 0}
+  windGlobalStrengthScale:
+    m_OverrideState: 1
+    m_Value: 1.77
+    min: 0
+    max: 3
+  windGlobalStrengthAudioInfluence:
+    m_OverrideState: 1
+    m_Value: 0.3
+    min: 0
+    max: 1
+  windGlobalStrengthAudioAmplitudeThreshold:
+    m_OverrideState: 1
+    m_Value: 0.01
+    min: 0
+    max: 1
+  windDirection:
+    m_OverrideState: 0
+    m_Value: 65
+    min: 0
+    max: 360
+  windDirectionVariance:
+    m_OverrideState: 0
+    m_Value: 25
+    min: 0
+    max: 30
+  windDirectionVariancePeriod:
+    m_OverrideState: 0
+    m_Value: 1.09
+    min: 0.01
+    max: 20
+  windZoneIntensityOffset:
+    m_OverrideState: 0
+    m_Value: 0.1
+    min: 0
+    max: 5
+  windZoneIntensityBaseScale:
+    m_OverrideState: 0
+    m_Value: 0.25
+    min: 0
+    max: 5
+  windZoneIntensityGustScale:
+    m_OverrideState: 0
+    m_Value: 0.5
+    min: 0
+    max: 5
+  windZoneIntensityFromGrass:
+    m_OverrideState: 0
+    m_Value: 1
+  windBaseStrength:
+    m_OverrideState: 1
+    m_Value: 0.4
+    min: 0
+    max: 75
+  windBaseStrengthOffset:
+    m_OverrideState: 1
+    m_Value: 0.5
+    min: 0
+    max: 3
+  windBaseStrengthPhase:
+    m_OverrideState: 1
+    m_Value: 3.05
+    min: 0
+    max: 10
+  windBaseStrengthVariancePeriod:
+    m_OverrideState: 1
+    m_Value: 2
+    min: 0.01
+    max: 20
+  windGustStrength:
+    m_OverrideState: 1
+    m_Value: 2
+    min: 0
+    max: 75
+  windGustStrengthOffset:
+    m_OverrideState: 1
+    m_Value: 1
+    min: 0
+    max: 5
+  windGustStrengthPhase:
+    m_OverrideState: 0
+    m_Value: 3
+    min: 0
+    max: 10
+  windGustStrengthVariancePeriod:
+    m_OverrideState: 0
+    m_Value: 2
+    min: 0.01
+    max: 10
+  windGustInnerCosScale:
+    m_OverrideState: 0
+    m_Value: 2
+    min: 0
+    max: 5
+  windFlutterStrength:
+    m_OverrideState: 1
+    m_Value: 0.7
+    min: 0
+    max: 10
+  windFlutterGustStrength:
+    m_OverrideState: 1
+    m_Value: 5
+    min: 0
+    max: 10
+  windFlutterGustStrengthOffset:
+    m_OverrideState: 0
+    m_Value: 10
+    min: 0
+    max: 75
+  windFlutterGustStrengthScale:
+    m_OverrideState: 1
+    m_Value: 27.6
+    min: 0
+    max: 75
+  windFlutterGustVariancePeriod:
+    m_OverrideState: 1
+    m_Value: 0.25
+    min: 0.01
+    max: 2
+  windTreeBaseStrength:
+    m_OverrideState: 1
+    m_Value: 0.3
+    min: 0
+    max: 10
+  windTreeBaseStrengthOffset:
+    m_OverrideState: 1
+    m_Value: 1
+    min: 0
+    max: 5
+  windTreeBaseStrengthPhase:
+    m_OverrideState: 0
+    m_Value: 0.5
+    min: 0
+    max: 10
+  windTreeBaseStrengthVariancePeriod:
+    m_OverrideState: 0
+    m_Value: 6
+    min: 0.01
+    max: 20
+  windTreeGustStrength:
+    m_OverrideState: 1
+    m_Value: 1.71
+    min: 0
+    max: 10
+  windTreeGustStrengthOffset:
+    m_OverrideState: 1
+    m_Value: 0.3
+    min: 0
+    max: 5
+  windTreeGustStrengthPhase:
+    m_OverrideState: 0
+    m_Value: 2
+    min: 0
+    max: 10
+  windTreeGustStrengthVariancePeriod:
+    m_OverrideState: 0
+    m_Value: 4
+    min: 0.01
+    max: 10
+  windTreeGustInnerCosScale:
+    m_OverrideState: 0
+    m_Value: 2
+    min: 0
+    max: 5
+  windTreeFlutterStrength:
+    m_OverrideState: 1
+    m_Value: 5
+    min: 0
+    max: 5
+  windTreeFlutterGustStrength:
+    m_OverrideState: 1
+    m_Value: 5
+    min: 0
+    max: 5
+  windTreeFlutterGustStrengthOffset:
+    m_OverrideState: 0
+    m_Value: 12.5
+    min: 0
+    max: 75
+  windTreeFlutterGustStrengthScale:
+    m_OverrideState: 1
+    m_Value: 25
+    min: 0
+    max: 75
+  windTreeFlutterGustVariancePeriod:
+    m_OverrideState: 1
+    m_Value: 0.451
+    min: 0.01
+    max: 2
+--- !u!114 &114546091308972056
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc4dfd69489f38c40bf01de36e189cf3, type: 3}
+  m_Name: AtmosphericScatteringProperties
+  m_EditorClassIdentifier: 
+  active: 1
+  target:
+    m_OverrideState: 0
+    m_Value:
+      exposedName: 
+      defaultValue: {fileID: 0}
+  worldRayleighColorRamp:
+    m_OverrideState: 1
+    m_Value:
+      serializedVersion: 2
+      key0: {r: 0.15294115, g: 0.60762435, b: 0.83137256, a: 1}
+      key1: {r: 0.15294115, g: 0.6608701, b: 0.83137256, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 65535
+      ctime2: 0
+      ctime3: 0
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+  worldRayleighColorIntensity:
+    m_OverrideState: 1
+    m_Value: 1
+  worldRayleighDensity:
+    m_OverrideState: 1
+    m_Value: 50
+  worldRayleighExtinctionFactor:
+    m_OverrideState: 1
+    m_Value: 1.4
+  worldRayleighIndirectScatter:
+    m_OverrideState: 1
+    m_Value: 0.4
+  worldMieColorRamp:
+    m_OverrideState: 1
+    m_Value:
+      serializedVersion: 2
+      key0: {r: 1, g: 1, b: 1, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 65535
+      ctime2: 0
+      ctime3: 0
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+  worldMieColorIntensity:
+    m_OverrideState: 1
+    m_Value: 1
+  worldMieDensity:
+    m_OverrideState: 1
+    m_Value: 5
+  worldMieExtinctionFactor:
+    m_OverrideState: 1
+    m_Value: 1
+  worldMiePhaseAnisotropy:
+    m_OverrideState: 1
+    m_Value: 0.95
+  worldNearScatterPush:
+    m_OverrideState: 1
+    m_Value: 3
+  worldNormalDistance:
+    m_OverrideState: 1
+    m_Value: 300
+  heightRayleighColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0.74509805, b: 0.7156226, a: 1}
+    hdr: 0
+    showAlpha: 1
+    showEyeDropper: 1
+  heightRayleighIntensity:
+    m_OverrideState: 1
+    m_Value: 0.4
+  heightRayleighDensity:
+    m_OverrideState: 1
+    m_Value: 1
+  heightMieDensity:
+    m_OverrideState: 1
+    m_Value: 0
+  heightExtinctionFactor:
+    m_OverrideState: 1
+    m_Value: 1.1
+  heightSeaLevel:
+    m_OverrideState: 1
+    m_Value: 77.1
+  heightDistance:
+    m_OverrideState: 1
+    m_Value: 1.3
+  heightPlaneShift:
+    m_OverrideState: 1
+    m_Value: {x: 0, y: 0, z: 0}
+  heightNearScatterPush:
+    m_OverrideState: 1
+    m_Value: 6
+  heightNormalDistance:
+    m_OverrideState: 1
+    m_Value: 1000
+  skyDomeScale:
+    m_OverrideState: 0
+    m_Value: {x: 1, y: 0.1, z: 1}
+  skyDomeRotation:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 0}
+  skyDomeTrackedYawRotation:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  skyDomeVerticalFlip:
+    m_OverrideState: 0
+    m_Value: 0
+  skyDomeCube:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  skyDomeExposure:
+    m_OverrideState: 1
+    m_Value: 1.3
+  skyDomeTint:
+    m_OverrideState: 0
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+    hdr: 0
+    showAlpha: 1
+    showEyeDropper: 1
+  useOcclusion:
+    m_OverrideState: 0
+    m_Value: 1
+  occlusionBias:
+    m_OverrideState: 0
+    m_Value: 0
+  occlusionBiasIndirect:
+    m_OverrideState: 0
+    m_Value: 0.2
+  occlusionBiasClouds:
+    m_OverrideState: 0
+    m_Value: 0.1
+  occlusionDownscale:
+    m_OverrideState: 0
+    m_Value: 4
+  occlusionSamples:
+    m_OverrideState: 0
+    m_Value: 0
+  occlusionDepthFixup:
+    m_OverrideState: 0
+    m_Value: 0
+  occlusionDepthThreshold:
+    m_OverrideState: 0
+    m_Value: 25
+  occlusionFullSky:
+    m_OverrideState: 0
+    m_Value: 0
+  occlusionBiasSkyRayleigh:
+    m_OverrideState: 0
+    m_Value: 0.2
+  occlusionBiasSkyMie:
+    m_OverrideState: 0
+    m_Value: 0.4
+  worldScaleExponent:
+    m_OverrideState: 0
+    m_Value: 1
+  forcePerPixel:
+    m_OverrideState: 0
+    m_Value: 1
+  forcePostEffect:
+    m_OverrideState: 0
+    m_Value: 0
+--- !u!114 &114988657375307082
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10b9ad5047bdaef41afc9d0c000e3d93, type: 3}
+  m_Name: LightProperties
+  m_EditorClassIdentifier: 
+  active: 1
+  target:
+    m_OverrideState: 0
+    m_Value:
+      exposedName: 
+      defaultValue: {fileID: 0}
+  rotation:
+    m_OverrideState: 1
+    m_Value: {x: 30, y: -435.27, z: 0}
+  color:
+    m_OverrideState: 0
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+    hdr: 0
+    showAlpha: 1
+    showEyeDropper: 1
+  colorTemperature:
+    m_OverrideState: 1
+    m_Value: 5500
+    min: 1000
+    max: 20000
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.6
+    min: 0
+  bounceIntensity:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+  cookie:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  cookieSize:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0

@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d72fdeae34806243ba705deb00d282b, type: 3}
+  m_Name: PLAYER_breathing_OUT_fast_plain_nose
+  m_EditorClassIdentifier: 
+  program:
+    clips:
+    - clip: {fileID: 8300000, guid: 90fae7099e0d1bd419abb8c518964e2a, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: fcc435a6f3c46d44fbdcccee2fc4f767, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: f4b042978e5c54e44a27d455639faea5, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: c68deee10449022499349bf3d1d28d4c, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 3887b5972bbc3b3419a3dece9a8da00a, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 2f252c43c0f46334b8860574a890a81f, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 50adfffdb4f181743bd59e9f97379ed0, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 6d1244e8467f8074d9d7262df1d886ba, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 47461a711efdd304cb788f73c750169f, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 2eb978659cc90a04e96c539c75ea87a1, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 71aab91768bba744db4346ff7d50a09c, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 108f147df75cc9e41b93273ba01bc2c5, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 97684559c859ce64ca65b60539fe57b7, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 9c89d76c0c6b99a44842b70631d8f2e5, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 3e25b694166d8f34c81ce7efbb2982ad, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: ed3c683478e44fe49ab48a769c82dfd9, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: ce16fc7511127224f96760fd20f6974d, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 6949eac48ab4e6842bbd286aaf364c74, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 33ff166068f2e844080dba194c9851cf, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 5ab0d24483b773d4892689ac7a808824, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 71a317f6fad54a842aed3efeaa97d1aa, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 3e0f3fb623db3764c9afdb8d136c53c4, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 357aa911cf0d8654ba5d2d1ca99364df, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: db5ca25aa215cb04d8efd4dc843da807, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: d714b6e70dfd6a747b1ec96ae6720292, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: a0b52edf1bde9f94a9d185a10d2a180a, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: b3851bd1d8a6f814eb433e64e063a4b9, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 7b9b988dd0a6e404691c59707f302327, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: cc1a56e07c6baae4b877bd01ac94a33e, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: ca800beb64eb8f344aa8421ba3e87ee6, type: 3}
+      gain: 0
+    - clip: {fileID: 8300000, guid: 0ea94e7c304d06346a609205276e425e, type: 3}
+      gain: 0
+    randomize: 0
+    increment: 1
+    mixerGroup: {fileID: 243673074036377360, guid: 8e6cb3bad29c67a4d8ab7a39e1bfeb99,
+      type: 2}
+    parameters:
+      loop: 0
+      volume:
+        min: 0.4
+        max: 0.7
+      pitch:
+        min: 1
+        max: 1
+      panning: 0
+      envelope:
+        attack: 0
+        release: 0
+      spatial:
+        blend: 0
+        distance:
+          min: 1
+          max: 40
+        doppler: 0.8
+      randomization:
+        distance:
+          min: 0
+          max: 0
+      occlusion:
+        function: 0
+      slapback:
+        asset: {fileID: 0}
+      runtime:
+        priority: 128
+  sequence:
+    timing: []
+    duration:
+      min: 0
+      max: 0
+    repeat:
+      count: 0
+      forever: 1

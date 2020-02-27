@@ -1,0 +1,11 @@
+{
+    "name": "OcclusionProbesEditor",
+    "references": [
+        "OcclusionProbes"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": []
+}

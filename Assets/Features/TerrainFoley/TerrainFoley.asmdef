@@ -1,0 +1,10 @@
+{
+    "name": "TerrainFoley",
+    "references": [
+        "Hapki.Spatial"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false
+}
