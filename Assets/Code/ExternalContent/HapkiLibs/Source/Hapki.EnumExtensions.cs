@@ -16,7 +16,8 @@ public static class EnumExtensions {
         var space = type.Namespace;
         for (int i = 0, n = names.Length; i < n; ++i) {
             var fullName = space != null ? space + "." + names[i] : names[i];
-            array[i] = (T) Activator.CreateInstance(assembly, fullName).Unwrap();
+            //array[i] = (T) Activator.CreateInstance(assembly, fullName).Unwrap(); //TODO: HOOK. COMPILE ERROR
+            throw new Exception("TODO: HOOK. COMPILE ERROR");
         }
         return array;
     }
